@@ -9,7 +9,7 @@ import os
 import aiosqlite
 
 
-from ..dms import app, Rule, Document, TrainingData
+from ..main import app, Rule, Document, TrainingData
 
 
 client = TestClient(app)

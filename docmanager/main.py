@@ -12,7 +12,7 @@ import contextlib
 from fastapi.middleware.cors import CORSMiddleware
 import re
 import json
-from .persian import setup_nlp_processor
+from persian import setup_nlp_processor
 
 
 app = FastAPI(

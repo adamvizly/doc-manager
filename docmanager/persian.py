@@ -8,8 +8,8 @@ class PersianNLPProcessor:
         self.normalizer = Normalizer()
         self.stemmer = Stemmer()
         self.lemmatizer = Lemmatizer()
-        self.tagger = POSTagger(model='docmanager/resources/pos_tagger.model')
-        self.chunker = Chunker(model='docmanager/resources/chunker.model')
+        self.tagger = POSTagger(model='resources/pos_tagger.model')
+        self.chunker = Chunker(model='resources/chunker.model')
         
         if use_transformer:
             self.tokenizer = AutoTokenizer.from_pretrained("HooshvareLab/bert-fa-base-uncased")
