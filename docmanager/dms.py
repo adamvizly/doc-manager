@@ -305,7 +305,7 @@ async def init_db():
         )
     """)
 
-@app.lifespan
+@contextlib.asynccontextmanager
 async def lifespan(app: FastAPI):
     await database.connect()
     await init_db()
